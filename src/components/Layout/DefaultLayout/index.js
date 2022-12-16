@@ -3,11 +3,11 @@ import Sidebar from "./Sidebar";
 
 function DefaultLayout({ children}) {
     return ( 
-        <div>
+        <div className="h-auto w-screen flex flex-col justify-center items-center">
             <Header />
-            <div>
+            <div className="h-[1000px] w-[75vw] flex justify-between">
                 <Sidebar />
-                <div>{children}</div>
+                <div className="h-[1000px] w-[45vw] bg-[#ddd]">{children}</div>
             </div>
         </div>
      );
